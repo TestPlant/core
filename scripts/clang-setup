@@ -1,6 +1,10 @@
 #!/bin/sh
 
-SUDO='sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH'
+if ! command -v sudo &> /dev/null; then
+  SUDO='' # sudo doesn't exist
+else
+  SUDO='sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH'
+fi
 
 cd ~
 
