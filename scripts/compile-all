@@ -14,6 +14,9 @@
 # <uses `--prefix=/usr/local/GNUstep' as option to configure>
 #
 
+# exit on error
+set -e
+
 if ! command -v sudo &> /dev/null; then
   SUDO='' # sudo doesn't exist
 else
