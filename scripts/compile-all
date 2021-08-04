@@ -119,7 +119,7 @@ fi
 . $prefix/System/Library/Makefiles/GNUstep.sh
 
 if [ "$CC" == "clang" ] ; then
-   ${scriptsdir}/clang-setup   
+   # SKIPPING - ${scriptsdir}/clang-setup   
 
    # Assume the presence of libdispatch if we are using clang and libobjc2
    export LDFLAGS=-ldispatch
