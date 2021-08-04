@@ -174,6 +174,10 @@ echo "Add script to etc and xsession..."
 if [ ! -e /etc/profile.d/GNUstep.sh ]; then
    ${SUDO} ln -s /usr/GNUstep/System/Library/Makefiles/GNUstep.sh /etc/profile.d/GNUstep.sh
 fi
-cd ../../plugins/session
-${SUDO} ./install.sh
+
+if [ -d ../../plugins/session ]; then
+  cd ../../plugins/session
+  ${SUDO} ./install.sh
+fi
+
 echo "Done."
