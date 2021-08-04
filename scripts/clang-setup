@@ -17,8 +17,8 @@ ${SUDO} rm -rf libdispatch
 ${SUDO} rm -rf libobjc2
    
 # pull
-git clone https://github.com/gnustep/libobjc2.git
-git clone https://github.com/nickhutchinson/libdispatch.git
+git clone --recursive https://github.com/gnustep/libobjc2.git
+git clone --recursive https://github.com/nickhutchinson/libdispatch.git
 
 # set vars
 export CC=clang
