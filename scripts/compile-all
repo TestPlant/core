@@ -14,7 +14,12 @@
 # <uses `--prefix=/usr/local/GNUstep' as option to configure>
 #
 
-SUDO='sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH'
+if ! command -v sudo &> /dev/null; then
+  SUDO='' # sudo doesn't exist
+else
+  SUDO='sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH'
+fi
+
 scriptsdir="`pwd`/scripts"
 
 if [ "$1" != "" ]; then 
