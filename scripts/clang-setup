@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# exit on error
+set -e
+
 if ! command -v sudo &> /dev/null; then
   SUDO='' # sudo doesn't exist
 else
