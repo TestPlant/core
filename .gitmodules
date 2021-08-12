@@ -9,4 +9,4 @@
 	url = https://github.com/gnustep/libs-back
 [submodule "make"]
 	path = make
-	url = https://github.com/gnustep/tools-make
+	url = https://github.com/TestPlant/tools-make
