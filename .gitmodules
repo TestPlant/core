@@ -1,12 +1,12 @@
 [submodule "gui"]
 	path = gui
-	url = https://github.com/TestPlant/libs-gui.git
+	url = https://github.com/gnustep/libs-gui.git
 [submodule "base"]
 	path = base
-	url = https://github.com/TestPlant/libs-base
+	url = https://github.com/gnustep/libs-base
 [submodule "back"]
 	path = back
-	url = https://github.com/TestPlant/libs-back
+	url = https://github.com/gnustep/libs-back
 [submodule "make"]
 	path = make
-	url = https://github.com/TestPlant/tools-make
+	url = https://github.com/gnustep/tools-make
