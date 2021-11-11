@@ -161,7 +161,7 @@ fi
 # Install back
 cd ../back
 . $prefix/System/Library/Makefiles/GNUstep.sh
-CCFLAGS=$cc_flags CXX=$CXX CC=$CC ./configure
+CCFLAGS=$cc_flags CXX=$CXX CC=$CC ./configure --enable-server=xheadless
 $MAKE messages=yes debug=yes
 if [ "true" == "$NEEDSROOT" ]; then
 ${SUDO} ./install.sh $prefix $MAKE
