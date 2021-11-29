@@ -6,7 +6,7 @@
 	url = https://github.com/gnustep/libs-base
 [submodule "back"]
 	path = back
-	url = https://github.com/gnustep/libs-back
+	url = https://github.com/TestPlant/libs-back
 [submodule "make"]
 	path = make
 	url = https://github.com/TestPlant/tools-make
